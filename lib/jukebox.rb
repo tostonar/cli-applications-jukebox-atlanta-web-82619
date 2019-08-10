@@ -23,3 +23,17 @@ def list(songs)
     puts "#{index + 1}. #{song}"
   }
 end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  users_response = gets.strip
+  if condition
+
+  else
+
+  end
+end
+
+def exit_jukebox
+  puts "Goodbye"  
+end
