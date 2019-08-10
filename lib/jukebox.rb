@@ -51,5 +51,9 @@ def run
     help
   when "exit"
     exit_jukebox
+    break
+  else
+    puts "I didn't recognize that"
+    run
   end
 end
