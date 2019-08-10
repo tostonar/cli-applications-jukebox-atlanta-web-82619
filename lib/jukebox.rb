@@ -53,7 +53,6 @@ def run
     exit_jukebox
     break
   else
-    puts "I didn't recognize that"
-    run
+    break
   end
 end
