@@ -27,9 +27,18 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   users_response = gets.strip
-  if users_response.to_i - 1 == (0...songs.length) 
+  index = users_response.to_i
+  songs.each do |song|
+    if users_response == song
+      puts "Playing #{song}"
+    elsif index == (0..songs.length)
 
-  else
+    end
+  end
+  if index == (0...songs.length)
+    puts "Playing #{songs[index]}"
+  elsif condition
+
 
   end
 end
