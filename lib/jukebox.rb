@@ -32,15 +32,12 @@ def play(songs)
     if users_response == song
       puts "Playing #{song}"
     elsif index == (0..songs.length)
-
+      puts "Playing #{songs[index]}"
+    else
+      puts "Invalid input, please try again"
     end
   end
-  if index == (0...songs.length)
-    puts "Playing #{songs[index]}"
-  elsif condition
-
-
-  end
+  
 end
 
 def exit_jukebox
