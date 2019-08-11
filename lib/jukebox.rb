@@ -1,3 +1,4 @@
+require "pry"
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -31,6 +32,7 @@ def play(songs)
   num_of_songs = songs.length
   songs.each do |song|
     if users_response == song
+      binding.pry
       puts "Playing #{song}"
     end
   end
